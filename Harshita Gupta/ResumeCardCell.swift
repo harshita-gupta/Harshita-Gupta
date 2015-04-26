@@ -153,7 +153,7 @@ class ResumeCardCell: UICollectionViewCell {
     
     func setCat() {
         categoryLabel.text = cardItem?.category?.catName!
-        categoryLabel.adjustsFontSizeToFitWidth = true
+        //categoryLabel.adjustsFontSizeToFitWidth = true
 
     }
     

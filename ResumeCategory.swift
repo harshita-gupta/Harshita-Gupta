@@ -34,7 +34,7 @@ class ResumeCategory : NSObject {
             self.catName = "Awards"
         case "exp" :
             self.catName = "Experience"
-        case "org" :
+        case "orgs" :
             self.catName = "Organizations"
         default :
             self.catName = nil

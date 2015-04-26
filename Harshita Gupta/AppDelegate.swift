@@ -14,17 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    
-    
-    
-    
-    
-    
-    
+
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        UILabel.appearance().substituteFontName = "Segoe UI"
+        UILabel.appearance().substituteFontName = "Futura"
         //UITextField.appearance().font = UIFont(name: "Segoe UI", size: 17.0)
         return true
     }

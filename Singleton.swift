@@ -239,50 +239,50 @@ class Singleton {
             
         }// END experience
 
-//        
-//        
-//        
-//        // START orgs
-//        struct orgs {
-//            
-//            //// START ACM
-//            struct acm {
-//                struct details {
-//                    static var d0 = ResumeItemDetail(detailNoImage: "Part of a five-student team that created an ACM Chapter and club at Mission San Jose High School")
-//                    static var d1 = ResumeItemDetail(detailNoImage: "Developed an AP Computer Science Curriculum, and teach lectures twice a week after school to students interested in computing. Prepare students to take the AP Computer Science Test in May.")
-//                    static var d2 = ResumeItemDetail(detailNoImage: "Concepts taught")
-//                    static var d3 = ResumeItemDetail(headerDetailNoImage: "\tIntroduction to programming: variables, conditionals, loops.")
-//                    static var d4 = ResumeItemDetail(headerDetailNoImage: "\tObject Oriented Programming: classes, objects, inheritance, polymorphism")
-//                    static var d5 = ResumeItemDetail(headerDetailNoImage: "\tAlgorithms: Sorting and Searching")
-//                    static var d6 = ResumeItemDetail(detailNoImage: "Hold extra-enrichment labs, guest speaker sessions, and year-round activities for chapter members.")
-//
-//                    static var all : [ResumeItemDetail] = [ d0,d1,d2,d3, d5, d6]
-//                }
-//                static var item = ResumeItem(cat: "orgs", withPos: "VP of Communications & AP Computer Science Teacher", withCompany: "Mission San Jose Association for Computing Machinery", withTimeframe: "January 2014- Present", withDetails: details.all )
-//            }
-//            
-//            ////// END ACM
-//            
-//            /////START gtgtc
-//            struct gtgtc {
-//                struct details {
-//                    static var d0 = ResumeItemDetail(headerDetailNoImage: "Work with Girls Teaching Girls to Code (GTGTC), an organization dedicated to improving the women-to-men ratio in the Computing Industry.")
-//                    
-//                    static var all : [ResumeItemDetail] = [d0]
-//                }
-//                static var item = ResumeItem(cat: "orgs", withPos: "High School Liaison", withCompany: "Stanford University Girls Teaching Girls to Code", withTimeframe: "January 2014- Present", withDetails: details.all )
-//            }
-//            
-//            //END gtgtc
-//            
-//            static let allItems : [ResumeItem] = [ acm.item,gtgtc.item]
-//            
-//        }// END technovation
-//
+        
+        
+        
+        // START orgs
+        struct orgs {
+            
+            //// START ACM
+            struct acm {
+                struct details {
+                    static var d0 = ResumeItemDetail(detailNoImage: "Part of a five-student team that created an ACM Chapter and club at Mission San Jose High School")
+                    static var d1 = ResumeItemDetail(detailNoImage: "Developed an AP Computer Science Curriculum, and teach lectures twice a week after school to students interested in computing. Prepare students to take the AP Computer Science Test in May.")
+                    static var d2 = ResumeItemDetail(detailNoImage: "Concepts taught")
+                    static var d3 = ResumeItemDetail(headerDetailNoImage: "\tIntroduction to programming: variables, conditionals, loops.")
+                    static var d4 = ResumeItemDetail(headerDetailNoImage: "\tObject Oriented Programming: classes, objects, inheritance, polymorphism")
+                    static var d5 = ResumeItemDetail(headerDetailNoImage: "\tAlgorithms: Sorting and Searching")
+                    static var d6 = ResumeItemDetail(detailNoImage: "Hold extra-enrichment labs, guest speaker sessions, and year-round activities for chapter members.")
+
+                    static var all : [ResumeItemDetail] = [ d0,d1,d2,d3, d5, d6]
+                }
+                static var item = ResumeItem(cat: "orgs", withPos: "VP of Communications & AP Computer Science Teacher", withCompany: "Mission San Jose Association for Computing Machinery", withTimeframe: "January 2014- Present", withDetails: details.all )
+            }
+            
+            ////// END ACM
+            
+            /////START gtgtc
+            struct gtgtc {
+                struct details {
+                    static var d0 = ResumeItemDetail(headerDetailNoImage: "Work with Girls Teaching Girls to Code (GTGTC), an organization dedicated to improving the women-to-men ratio in the Computing Industry.")
+                    
+                    static var all : [ResumeItemDetail] = [d0]
+                }
+                static var item = ResumeItem(cat: "orgs", withPos: "High School Liaison", withCompany: "Stanford University Girls Teaching Girls to Code", withTimeframe: "January 2014- Present", withDetails: details.all )
+            }
+            
+            //END gtgtc
+            
+            static let allItems : [ResumeItem] = [ acm.item,gtgtc.item]
+            
+        }// END technovation
+
         
         
     
-        static let allSectionItems : [ResumeItem] = education.allItems + skills.allItems + awards.allItems + experience.allItems// + orgs.allItems//+ subsequent sections when added in
+        static let allSectionItems : [ResumeItem] = education.allItems + skills.allItems + awards.allItems + experience.allItems + orgs.allItems//+ subsequent sections when added in
 
     }
 
