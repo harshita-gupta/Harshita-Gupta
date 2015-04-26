@@ -36,5 +36,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SEGOEUI.TTF</string>
+		<string>SEGOEUIB.TTF</string>
+		<string>SEGOEUII.TTF</string>
+		<string>SEGOEUIL.TTF</string>
+		<string>SEGOEUISL.TTF</string>
+		<string>SEGOEUIZ.TTF</string>
+		<string>SEGOEUIBL.TTF</string>
+		<string>SEGOEUIBLI.TTF</string>
+		<string>SEGOEUILI.TTF</string>
+		<string>SEGOEUISB.TTF</string>
+		<string>SEGOEUISBI.TTF</string>
+		<string>SEGOEUISLI.TTF</string>
+	</array>
 </dict>
 </plist>

@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        UILabel.appearance().substituteFontName = "Segoe UI"
+        //UITextField.appearance().font = UIFont(name: "Segoe UI", size: 17.0)
         return true
     }
 
@@ -44,3 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension UILabel {
+    var substituteFontName : String {
+        get { return self.font.fontName }
+        set { self.font = UIFont(name: newValue, size: self.font.pointSize) }
+    }
+}

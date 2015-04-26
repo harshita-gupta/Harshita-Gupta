@@ -8,11 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EE0175551AEB620D0007EA3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175541AEB620D0007EA3B /* AppDelegate.swift */; };
-		EE0175571AEB620D0007EA3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175561AEB620D0007EA3B /* ViewController.swift */; };
-		EE01755A1AEB620D0007EA3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0175581AEB620D0007EA3B /* Main.storyboard */; };
+		EE0175571AEB620D0007EA3B /* ResumeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175561AEB620D0007EA3B /* ResumeCardViewController.swift */; };
 		EE01755C1AEB620D0007EA3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE01755B1AEB620D0007EA3B /* Images.xcassets */; };
 		EE01755F1AEB620D0007EA3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE01755D1AEB620D0007EA3B /* LaunchScreen.xib */; };
 		EE01756B1AEB620E0007EA3B /* Harshita_GuptaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01756A1AEB620E0007EA3B /* Harshita_GuptaTests.swift */; };
+		EE0175841AEBE1A70007EA3B /* ResumeMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175831AEBE1A70007EA3B /* ResumeMaterial.swift */; };
+		EE0175861AEC0DE50007EA3B /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175851AEC0DE50007EA3B /* Singleton.swift */; };
+		EE0175881AEC0F5C0007EA3B /* ResumeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175871AEC0F5C0007EA3B /* ResumeCategory.swift */; };
+		EE0175981AEC14890007EA3B /* TGLExposedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0175931AEC14890007EA3B /* TGLExposedLayout.m */; };
+		EE0175991AEC14890007EA3B /* TGLStackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0175951AEC14890007EA3B /* TGLStackedLayout.m */; };
+		EE01759A1AEC14890007EA3B /* TGLStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0175971AEC14890007EA3B /* TGLStackedViewController.m */; };
+		EE0175A01AEC16580007EA3B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01759F1AEC16580007EA3B /* UIColorExtension.swift */; };
+		EE0175A21AEC17740007EA3B /* ResumeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175A11AEC17740007EA3B /* ResumeItem.swift */; };
+		EE0175A41AEC18870007EA3B /* ResumeItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175A31AEC18870007EA3B /* ResumeItemDetail.swift */; };
+		EE0175A91AEC1C8F0007EA3B /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0175A61AEC1C8F0007EA3B /* FLAnimatedImage.m */; };
+		EE0175AA1AEC1C8F0007EA3B /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0175A81AEC1C8F0007EA3B /* FLAnimatedImageView.m */; };
+		EE0175AD1AEC3A2B0007EA3B /* ResumeCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175AC1AEC3A2B0007EA3B /* ResumeCardCell.swift */; };
+		EEFC8C421AED686F00A29778 /* ResumeItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC8C411AED686F00A29778 /* ResumeItemDetailViewController.swift */; };
+		EEFC8C441AED68C600A29778 /* ResumeItemDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC8C431AED68C600A29778 /* ResumeItemDetailView.xib */; };
+		EEFD23171AED2860005EBB78 /* PassbookLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFD23161AED2860005EBB78 /* PassbookLayout.swift */; };
+		EEFD231B1AED28BE005EBB78 /* ResumeCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFD231A1AED28BE005EBB78 /* ResumeCardCell.xib */; };
+		EEFD23201AED31B3005EBB78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEFD231E1AED31B3005EBB78 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +45,47 @@
 		EE01754F1AEB620D0007EA3B /* Harshita Gupta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harshita Gupta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0175531AEB620D0007EA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE0175541AEB620D0007EA3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE0175561AEB620D0007EA3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE0175591AEB620D0007EA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE0175561AEB620D0007EA3B /* ResumeCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeCardViewController.swift; sourceTree = "<group>"; };
 		EE01755B1AEB620D0007EA3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EE01755E1AEB620D0007EA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EE0175641AEB620E0007EA3B /* Harshita GuptaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Harshita GuptaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0175691AEB620E0007EA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE01756A1AEB620E0007EA3B /* Harshita_GuptaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harshita_GuptaTests.swift; sourceTree = "<group>"; };
+		EE0175831AEBE1A70007EA3B /* ResumeMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeMaterial.swift; sourceTree = "<group>"; };
+		EE0175851AEC0DE50007EA3B /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		EE0175871AEC0F5C0007EA3B /* ResumeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeCategory.swift; sourceTree = "<group>"; };
+		EE0175921AEC14890007EA3B /* TGLExposedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLExposedLayout.h; sourceTree = "<group>"; };
+		EE0175931AEC14890007EA3B /* TGLExposedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLExposedLayout.m; sourceTree = "<group>"; };
+		EE0175941AEC14890007EA3B /* TGLStackedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLStackedLayout.h; sourceTree = "<group>"; };
+		EE0175951AEC14890007EA3B /* TGLStackedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLStackedLayout.m; sourceTree = "<group>"; };
+		EE0175961AEC14890007EA3B /* TGLStackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLStackedViewController.h; sourceTree = "<group>"; };
+		EE0175971AEC14890007EA3B /* TGLStackedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLStackedViewController.m; sourceTree = "<group>"; };
+		EE01759C1AEC157B0007EA3B /* Harshita Gupta-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Harshita Gupta-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE01759F1AEC16580007EA3B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		EE0175A11AEC17740007EA3B /* ResumeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeItem.swift; sourceTree = "<group>"; };
+		EE0175A31AEC18870007EA3B /* ResumeItemDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeItemDetail.swift; sourceTree = "<group>"; };
+		EE0175A51AEC1C8F0007EA3B /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		EE0175A61AEC1C8F0007EA3B /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		EE0175A71AEC1C8F0007EA3B /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		EE0175A81AEC1C8F0007EA3B /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		EE0175AC1AEC3A2B0007EA3B /* ResumeCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeCardCell.swift; sourceTree = "<group>"; };
+		EEFC8C411AED686F00A29778 /* ResumeItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeItemDetailViewController.swift; sourceTree = "<group>"; };
+		EEFC8C431AED68C600A29778 /* ResumeItemDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeItemDetailView.xib; sourceTree = "<group>"; };
+		EEFC8C451AED913B00A29778 /* SEGOEUI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEUI.TTF; sourceTree = "<group>"; };
+		EEFC8C461AED913B00A29778 /* SEGOEUIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEUIB.TTF; sourceTree = "<group>"; };
+		EEFC8C471AED913B00A29778 /* SEGOEUII.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEUII.TTF; sourceTree = "<group>"; };
+		EEFC8C481AED913B00A29778 /* SEGOEUIL.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEUIL.TTF; sourceTree = "<group>"; };
+		EEFC8C491AED913B00A29778 /* SEGOEUISL.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEUISL.TTF; sourceTree = "<group>"; };
+		EEFC8C4A1AED913B00A29778 /* SEGOEUIZ.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEUIZ.TTF; sourceTree = "<group>"; };
+		EEFC8C4B1AED913B00A29778 /* SEGUIBL.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGUIBL.TTF; sourceTree = "<group>"; };
+		EEFC8C4C1AED913B00A29778 /* SEGUIBLI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGUIBLI.TTF; sourceTree = "<group>"; };
+		EEFC8C4D1AED913B00A29778 /* SEGUILI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGUILI.TTF; sourceTree = "<group>"; };
+		EEFC8C4E1AED913B00A29778 /* SEGUISB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGUISB.TTF; sourceTree = "<group>"; };
+		EEFC8C4F1AED913B00A29778 /* SEGUISBI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGUISBI.TTF; sourceTree = "<group>"; };
+		EEFC8C501AED913B00A29778 /* SEGUISLI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGUISLI.TTF; sourceTree = "<group>"; };
+		EEFD23161AED2860005EBB78 /* PassbookLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassbookLayout.swift; sourceTree = "<group>"; };
+		EEFD231A1AED28BE005EBB78 /* ResumeCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeCardCell.xib; sourceTree = "<group>"; };
+		EEFD231F1AED31B3005EBB78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +109,10 @@
 		EE0175461AEB620D0007EA3B = {
 			isa = PBXGroup;
 			children = (
+				EEFC8C511AED914200A29778 /* Fonts */,
+				EE01759D1AEC162E0007EA3B /* External */,
+				EE0175851AEC0DE50007EA3B /* Singleton.swift */,
+				EE0175821AEBE1740007EA3B /* Resume Material */,
 				EE0175511AEB620D0007EA3B /* Harshita Gupta */,
 				EE0175671AEB620E0007EA3B /* Harshita GuptaTests */,
 				EE0175501AEB620D0007EA3B /* Products */,
@@ -78,8 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				EE0175541AEB620D0007EA3B /* AppDelegate.swift */,
-				EE0175561AEB620D0007EA3B /* ViewController.swift */,
-				EE0175581AEB620D0007EA3B /* Main.storyboard */,
+				EEFD231E1AED31B3005EBB78 /* Main.storyboard */,
+				EE0175561AEB620D0007EA3B /* ResumeCardViewController.swift */,
+				EEFD231A1AED28BE005EBB78 /* ResumeCardCell.xib */,
+				EE0175AC1AEC3A2B0007EA3B /* ResumeCardCell.swift */,
+				EEFC8C431AED68C600A29778 /* ResumeItemDetailView.xib */,
+				EEFC8C411AED686F00A29778 /* ResumeItemDetailViewController.swift */,
 				EE01755B1AEB620D0007EA3B /* Images.xcassets */,
 				EE01755D1AEB620D0007EA3B /* LaunchScreen.xib */,
 				EE0175521AEB620D0007EA3B /* Supporting Files */,
@@ -110,6 +168,80 @@
 				EE0175691AEB620E0007EA3B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE0175821AEBE1740007EA3B /* Resume Material */ = {
+			isa = PBXGroup;
+			children = (
+				EE0175831AEBE1A70007EA3B /* ResumeMaterial.swift */,
+				EE0175A11AEC17740007EA3B /* ResumeItem.swift */,
+				EE0175A31AEC18870007EA3B /* ResumeItemDetail.swift */,
+				EE0175871AEC0F5C0007EA3B /* ResumeCategory.swift */,
+			);
+			name = "Resume Material";
+			sourceTree = "<group>";
+		};
+		EE01759D1AEC162E0007EA3B /* External */ = {
+			isa = PBXGroup;
+			children = (
+				EEFD23151AED2841005EBB78 /* PassbookLayout */,
+				EE01759C1AEC157B0007EA3B /* Harshita Gupta-Bridging-Header.h */,
+				EE01759F1AEC16580007EA3B /* UIColorExtension.swift */,
+				EE0175AB1AEC1C930007EA3B /* FLAnimatedImage */,
+				EE01759E1AEC16350007EA3B /* TGLStackedViewController- defunct, replaced with PassbookLayout */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		EE01759E1AEC16350007EA3B /* TGLStackedViewController- defunct, replaced with PassbookLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EE0175921AEC14890007EA3B /* TGLExposedLayout.h */,
+				EE0175931AEC14890007EA3B /* TGLExposedLayout.m */,
+				EE0175941AEC14890007EA3B /* TGLStackedLayout.h */,
+				EE0175951AEC14890007EA3B /* TGLStackedLayout.m */,
+				EE0175961AEC14890007EA3B /* TGLStackedViewController.h */,
+				EE0175971AEC14890007EA3B /* TGLStackedViewController.m */,
+			);
+			name = "TGLStackedViewController- defunct, replaced with PassbookLayout";
+			sourceTree = "<group>";
+		};
+		EE0175AB1AEC1C930007EA3B /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				EE0175A51AEC1C8F0007EA3B /* FLAnimatedImage.h */,
+				EE0175A61AEC1C8F0007EA3B /* FLAnimatedImage.m */,
+				EE0175A71AEC1C8F0007EA3B /* FLAnimatedImageView.h */,
+				EE0175A81AEC1C8F0007EA3B /* FLAnimatedImageView.m */,
+			);
+			name = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		EEFC8C511AED914200A29778 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EEFC8C451AED913B00A29778 /* SEGOEUI.TTF */,
+				EEFC8C461AED913B00A29778 /* SEGOEUIB.TTF */,
+				EEFC8C471AED913B00A29778 /* SEGOEUII.TTF */,
+				EEFC8C481AED913B00A29778 /* SEGOEUIL.TTF */,
+				EEFC8C491AED913B00A29778 /* SEGOEUISL.TTF */,
+				EEFC8C4A1AED913B00A29778 /* SEGOEUIZ.TTF */,
+				EEFC8C4B1AED913B00A29778 /* SEGUIBL.TTF */,
+				EEFC8C4C1AED913B00A29778 /* SEGUIBLI.TTF */,
+				EEFC8C4D1AED913B00A29778 /* SEGUILI.TTF */,
+				EEFC8C4E1AED913B00A29778 /* SEGUISB.TTF */,
+				EEFC8C4F1AED913B00A29778 /* SEGUISBI.TTF */,
+				EEFC8C501AED913B00A29778 /* SEGUISLI.TTF */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		EEFD23151AED2841005EBB78 /* PassbookLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EEFD23161AED2860005EBB78 /* PassbookLayout.swift */,
+			);
+			name = PassbookLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +324,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE01755A1AEB620D0007EA3B /* Main.storyboard in Resources */,
 				EE01755F1AEB620D0007EA3B /* LaunchScreen.xib in Resources */,
+				EEFC8C441AED68C600A29778 /* ResumeItemDetailView.xib in Resources */,
 				EE01755C1AEB620D0007EA3B /* Images.xcassets in Resources */,
+				EEFD231B1AED28BE005EBB78 /* ResumeCardCell.xib in Resources */,
+				EEFD23201AED31B3005EBB78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +346,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0175571AEB620D0007EA3B /* ViewController.swift in Sources */,
+				EEFD23171AED2860005EBB78 /* PassbookLayout.swift in Sources */,
+				EEFC8C421AED686F00A29778 /* ResumeItemDetailViewController.swift in Sources */,
+				EE0175571AEB620D0007EA3B /* ResumeCardViewController.swift in Sources */,
 				EE0175551AEB620D0007EA3B /* AppDelegate.swift in Sources */,
+				EE01759A1AEC14890007EA3B /* TGLStackedViewController.m in Sources */,
+				EE0175A21AEC17740007EA3B /* ResumeItem.swift in Sources */,
+				EE0175981AEC14890007EA3B /* TGLExposedLayout.m in Sources */,
+				EE0175991AEC14890007EA3B /* TGLStackedLayout.m in Sources */,
+				EE0175A01AEC16580007EA3B /* UIColorExtension.swift in Sources */,
+				EE0175A41AEC18870007EA3B /* ResumeItemDetail.swift in Sources */,
+				EE0175AD1AEC3A2B0007EA3B /* ResumeCardCell.swift in Sources */,
+				EE0175A91AEC1C8F0007EA3B /* FLAnimatedImage.m in Sources */,
+				EE0175881AEC0F5C0007EA3B /* ResumeCategory.swift in Sources */,
+				EE0175841AEBE1A70007EA3B /* ResumeMaterial.swift in Sources */,
+				EE0175AA1AEC1C8F0007EA3B /* FLAnimatedImageView.m in Sources */,
+				EE0175861AEC0DE50007EA3B /* Singleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,20 +384,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE0175581AEB620D0007EA3B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE0175591AEB620D0007EA3B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE01755D1AEB620D0007EA3B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EE01755E1AEB620D0007EA3B /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		EEFD231E1AED31B3005EBB78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEFD231F1AED31B3005EBB78 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,9 +488,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Harshita Gupta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Harshita Gupta-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +501,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Harshita Gupta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Harshita Gupta-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +562,7 @@
 				EE0175701AEB620E0007EA3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE0175711AEB620E0007EA3B /* Build configuration list for PBXNativeTarget "Harshita GuptaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +571,7 @@
 				EE0175731AEB620E0007EA3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
