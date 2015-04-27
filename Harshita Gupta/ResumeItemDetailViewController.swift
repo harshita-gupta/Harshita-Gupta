@@ -19,6 +19,7 @@ class ResumeItemDetailViewController : UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         print("awoke from nib")
+        //self.backgroundColor
     }
     
     func setResumeDetail (withResumeDetail: ResumeItemDetail) {
@@ -37,10 +38,14 @@ class ResumeItemDetailViewController : UIView {
             imView.size.height = animImageParentView.frame.size.height
             imView.size.width = animImageParentView.frame.size.width
             animImageView.frame = imView
-            animImageView.animatedImage = detail?.image!
+            if (detail?.image != nil) {
+                animImageView.animatedImage = detail?.image!
+            }
         }
         else {
-            
+            var animFrame = animImageParentView.frame
+            animFrame.size.height = 0
+            animImageParentView.frame = animFrame
         }
     }
     

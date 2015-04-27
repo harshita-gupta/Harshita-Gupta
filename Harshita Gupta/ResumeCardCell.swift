@@ -40,7 +40,7 @@ class ResumeCardCell: UICollectionViewCell {
     func configureScrollView() {
         
         
-        if cardItem?.allText == true {
+        //if cardItem?.allText == true {
             var allDetailText : String = ""
             for detail in cardItem?.details! as [ResumeItemDetail]!{
                 var currDetailLine : String
@@ -70,26 +70,26 @@ class ResumeCardCell: UICollectionViewCell {
             detailFrame.size.height = scrollView.frame.size.height
             detailView.frame = detailFrame
             
-        }
+       // }
         
-        else {
-            for detail in cardItem?.details! as [ResumeItemDetail]! {
-                var detailView = NSBundle.mainBundle().loadNibNamed("ResumeItemDetailView", owner: nil, options: nil).last as! ResumeItemDetailViewController
-                detailView.setResumeDetail(detail)
-                scrollView.addSubview(detailView)
-                var detailFrame = detailView.frame
-                detailFrame.origin.x = 0
-                detailFrame.origin.y = scrollView.frame.size.width
-                detailView.frame = detailFrame
-
-            }
-        }
+//        else {
+//            for detail in cardItem?.details! as [ResumeItemDetail]! {
+//                var detailView = NSBundle.mainBundle().loadNibNamed("ResumeItemDetailView", owner: nil, options: nil).last as! ResumeItemDetailViewController
+//                detailView.setResumeDetail(detail)
+//                scrollView.addSubview(detailView)
+//                var detailFrame = detailView.frame
+//                detailFrame.origin.x = 0
+//                detailFrame.origin.y = scrollView.frame.size.width
+//                detailView.frame = detailFrame
+//
+//            }
+//        }
         
         scrollViewLook()
     }
     
     func configureMainCardLook() {
-        mainView.backgroundColor = UIColor.whiteColor()
+        mainView.backgroundColor = cardItem?.category?.color_dark!
         
         mainView.layer.cornerRadius = 10
         
@@ -122,21 +122,23 @@ class ResumeCardCell: UICollectionViewCell {
             positionLabel.hidden = true
             organizationLabel.adjustsFontSizeToFitWidth = true
 
-            organizationLabel.font = organizationLabel.font.fontWithSize(30.0)
+            //organizationLabel.font = organizationLabel.font.fontWithSize(30.0)
             organizationLabel.frame.offset(dx: 0, dy: -25)
             var orgFrame = organizationLabel.frame
             orgFrame.size.height = organizationLabel.frame.size.height + 10.0
             organizationLabel.frame = orgFrame
-            organizationLabel.textColor = cardItem?.category?.color_dark!
+            organizationLabel.textColor = UIColor.whiteColor()
             organizationLabel.adjustsFontSizeToFitWidth = true
 
 
         }
         
         //SET COLORS
-        positionLabel.textColor = cardItem?.category?.color_dark!
-        categoryLabel.textColor = cardItem?.category?.color!
-        timeFrameLabel.textColor = cardItem?.category?.color!
+        positionLabel.textColor = UIColor.whiteColor()
+        categoryLabel.textColor = UIColor.whiteColor()
+        timeFrameLabel.textColor = UIColor.whiteColor()
+        organizationLabel.textColor = UIColor.whiteColor()
+
     }
 
     
@@ -163,7 +165,7 @@ class ResumeCardCell: UICollectionViewCell {
     
     
     func scrollViewLook() {
-        scrollView.backgroundColor = UIColor.whiteColor()
+        scrollView.backgroundColor = cardItem?.category?.color!
         
     }
     

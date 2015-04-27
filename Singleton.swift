@@ -29,8 +29,8 @@ class Singleton {
         static var blue_dark = "334C60"
         static var orange = "F9A930"
         static var orange_dark = "FC6924"
-        static var green = "BBD653"
-        static var green_dark = "5BE34D"
+        static var green = "A5BC49"
+        static var green_dark = "6D7C30"
         static var purple = "9F8EC4"
         static var purple_dark = "7D57CE"
         static var yellow = "F2E22A"
@@ -161,14 +161,19 @@ class Singleton {
             //// START EPA
             struct epa {
                 struct details {
-                    static var d0 = ResumeItemDetail(headerDetailNoImage: "Designed an iOS city-beautification mobile application that allows users to submit a geo-tagged photo of abandoned trash, fallen trees, graffiti, etc. to the city for removal.")
-                    static var d1 = ResumeItemDetail(detailNoImage: "Won the Most Social Impact Hack at the Pilot East Palo Alto Hackathon for the app.")
-                    static var d2 = ResumeItemDetail(detailNoImage: "Presented app at a city meeting attended by their IT, Engineering, Maintenance, and Police Departments")
-                    static var d3 = ResumeItemDetail(detailNoImage: "Currently working to modify the app to the needs of the city. Vice Mayor of the city of East Palo Alto, Ms. Lisa Yarbrough-Gauthier, has connected me to and I am working with the city’s Community and Economic Development Department. The app will undergo review before it is proposed for adoption to the City Council.")
+                    //static var
+                    static var epaimdata = NSData(contentsOfFile: "EPA1")
                     
-                    static var all : [ResumeItemDetail] = [ d0,d1,d2,d3]
+                    static var EPAImage1 = FLAnimatedImage(GIFData: epaimdata)
+                    static var d0 = ResumeItemDetail(headerDetailNoImage: "Designed an iOS city-beautification mobile application that allows users to submit a geo-tagged photo of abandoned trash, fallen trees, graffiti, etc. to the city for removal")
+                   // static var d0 = ResumeItemDetail(detailWithDescription: "Designed an iOS city-beautification mobile application that allows users to submit a geo-tagged photo of abandoned trash, fallen trees, graffiti, etc. to the city for removal.", withVisuals: true, accompanyingImage: EPAImage1, isEmbedded: false, isHeader: true)
+                     static var d1 = ResumeItemDetail(detailNoImage: "Won the Most Social Impact Hack at the Pilot East Palo Alto Hackathon for the app.")
+                     static var d2 = ResumeItemDetail(detailNoImage: "Presented app at a city meeting attended by their IT, Engineering, Maintenance, and Police Departments")
+                     static var d3 = ResumeItemDetail(detailNoImage: "Currently working to modify the app to the needs of the city. Vice Mayor of the city of East Palo Alto, Ms. Lisa Yarbrough-Gauthier, has connected me to and I am working with the city’s Community and Economic Development Department. The app will undergo review before it is proposed for adoption to the City Council.")
+                    
+                     static var all : [ResumeItemDetail] = [ d0,d1,d2,d3]
                 }
-                static var item = ResumeItem(cat: "exp", withPos: "Independent iOS Developer", withCompany: "City of East Palo Alto's Community Beautification App", withTimeframe: "November 2014- Present", withDetails: details.all )
+                static var item = ResumeItem(cat: "exp", withPos: "Independent iOS Developer", withCompany: "City of East Palo Alto's Community Beautification App", withTimeframe: "November 2014- Present", withDetails: details.all)
             }
             
             ////// END EPA

@@ -24,6 +24,8 @@
 		EE0175A91AEC1C8F0007EA3B /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0175A61AEC1C8F0007EA3B /* FLAnimatedImage.m */; };
 		EE0175AA1AEC1C8F0007EA3B /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0175A81AEC1C8F0007EA3B /* FLAnimatedImageView.m */; };
 		EE0175AD1AEC3A2B0007EA3B /* ResumeCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0175AC1AEC3A2B0007EA3B /* ResumeCardCell.swift */; };
+		EE45B4AB1AEDA79D00561A45 /* EPA1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EE45B4A91AEDA79D00561A45 /* EPA1.gif */; };
+		EE45B4AC1AEDA79D00561A45 /* EPA2.gif in Resources */ = {isa = PBXBuildFile; fileRef = EE45B4AA1AEDA79D00561A45 /* EPA2.gif */; };
 		EEFC8C421AED686F00A29778 /* ResumeItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC8C411AED686F00A29778 /* ResumeItemDetailViewController.swift */; };
 		EEFC8C441AED68C600A29778 /* ResumeItemDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC8C431AED68C600A29778 /* ResumeItemDetailView.xib */; };
 		EEFD23171AED2860005EBB78 /* PassbookLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFD23161AED2860005EBB78 /* PassbookLayout.swift */; };
@@ -69,6 +71,8 @@
 		EE0175A71AEC1C8F0007EA3B /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
 		EE0175A81AEC1C8F0007EA3B /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
 		EE0175AC1AEC3A2B0007EA3B /* ResumeCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeCardCell.swift; sourceTree = "<group>"; };
+		EE45B4A91AEDA79D00561A45 /* EPA1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EPA1.gif; sourceTree = "<group>"; };
+		EE45B4AA1AEDA79D00561A45 /* EPA2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EPA2.gif; sourceTree = "<group>"; };
 		EEFC8C411AED686F00A29778 /* ResumeItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeItemDetailViewController.swift; sourceTree = "<group>"; };
 		EEFC8C431AED68C600A29778 /* ResumeItemDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeItemDetailView.xib; sourceTree = "<group>"; };
 		EEFC8C451AED913B00A29778 /* SEGOEUI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEUI.TTF; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 		EE0175461AEB620D0007EA3B = {
 			isa = PBXGroup;
 			children = (
+				EE45B4A81AEDA35400561A45 /* Images */,
 				EEFC8C511AED914200A29778 /* Fonts */,
 				EE01759D1AEC162E0007EA3B /* External */,
 				EE0175851AEC0DE50007EA3B /* Singleton.swift */,
@@ -215,6 +220,15 @@
 				EE0175A81AEC1C8F0007EA3B /* FLAnimatedImageView.m */,
 			);
 			name = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		EE45B4A81AEDA35400561A45 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE45B4A91AEDA79D00561A45 /* EPA1.gif */,
+				EE45B4AA1AEDA79D00561A45 /* EPA2.gif */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		EEFC8C511AED914200A29778 /* Fonts */ = {
@@ -326,7 +340,9 @@
 			files = (
 				EE01755F1AEB620D0007EA3B /* LaunchScreen.xib in Resources */,
 				EEFC8C441AED68C600A29778 /* ResumeItemDetailView.xib in Resources */,
+				EE45B4AB1AEDA79D00561A45 /* EPA1.gif in Resources */,
 				EE01755C1AEB620D0007EA3B /* Images.xcassets in Resources */,
+				EE45B4AC1AEDA79D00561A45 /* EPA2.gif in Resources */,
 				EEFD231B1AED28BE005EBB78 /* ResumeCardCell.xib in Resources */,
 				EEFD23201AED31B3005EBB78 /* Main.storyboard in Resources */,
 			);
