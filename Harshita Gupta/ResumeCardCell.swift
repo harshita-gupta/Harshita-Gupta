@@ -22,11 +22,11 @@ class ResumeCardCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        println("card cell awoke from nib")
+        print("card cell awoke from nib")
     }
     
     func setCardInfo(cardItemIn: ResumeItem) {
-        println("setting card info")
+        print("setting card info")
         self.cardItem = cardItemIn
         
         configureMainCardLook()
@@ -57,9 +57,9 @@ class ResumeCardCell: UICollectionViewCell {
                 
                 allDetailText = allDetailText + currDetailLine  + "\n\n"
             }
-            var masterDetail = ResumeItemDetail(detailNoImage: allDetailText)
+            let masterDetail = ResumeItemDetail(detailNoImage: allDetailText)
             
-            var detailView = NSBundle.mainBundle().loadNibNamed("ResumeItemDetailView", owner: nil, options: nil).last as! ResumeItemDetailViewController
+            let detailView = NSBundle.mainBundle().loadNibNamed("ResumeItemDetailView", owner: nil, options: nil).last as! ResumeItemDetailViewController
             
             detailView.setResumeDetail(masterDetail)
             scrollView.addSubview(detailView)
@@ -117,13 +117,13 @@ class ResumeCardCell: UICollectionViewCell {
     func headerInfoLook() {
         
         if (cardItem?.position == "") {
-            organizationLabel.setTranslatesAutoresizingMaskIntoConstraints(true)
+            organizationLabel.translatesAutoresizingMaskIntoConstraints = true
 
             positionLabel.hidden = true
             organizationLabel.adjustsFontSizeToFitWidth = true
 
             //organizationLabel.font = organizationLabel.font.fontWithSize(30.0)
-            organizationLabel.frame.offset(dx: 0, dy: -25)
+            organizationLabel.frame.offsetInPlace(dx: 0, dy: -25)
             var orgFrame = organizationLabel.frame
             orgFrame.size.height = organizationLabel.frame.size.height + 10.0
             organizationLabel.frame = orgFrame

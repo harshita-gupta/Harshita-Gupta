@@ -41,10 +41,10 @@ class PassbookLayout: UICollectionViewLayout {
     var metrics:PassbookLayoutMetrics = PassbookLayoutMetrics(normal: PassMetrics(size: CGSizeMake(320.0, 420.0), overlap: 0.0), collapsed: PassMetrics(size: CGSizeMake(320.0, 96.0), overlap: 15.0), bottomStackedTotalHeight: 32.00, bottomStackedHeight: 8.0)
     var effects:PassbookLayoutEffects = PassbookLayoutEffects(inheritance: 0.20, bouncesTop: true, sticksTop: true)
     
-    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
+    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
         
-        var attributes:UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
-        var selectedIndexPaths = (self.collectionView?.indexPathsForSelectedItems())! as NSArray
+        let attributes:UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
+        let selectedIndexPaths = (self.collectionView?.indexPathsForSelectedItems())! as NSArray
         if (selectedIndexPaths.count>0 && selectedIndexPaths[0] as! NSIndexPath == indexPath)
         {
             // Layout selected cell (normal size)
@@ -55,26 +55,26 @@ class PassbookLayout: UICollectionViewLayout {
         }
         else{
             // Layout collapsed cells (collapsed size)
-            var isLast:Bool = (indexPath.item == (collectionView?.numberOfItemsInSection(indexPath.section))!-1)
+            let isLast:Bool = (indexPath.item == (collectionView?.numberOfItemsInSection(indexPath.section))!-1)
             attributes.frame = frameForPassAtIndex(indexPath, isLastCell: isLast, b: (collectionView?.bounds)!, m: metrics, e: effects)
         }
         attributes.zIndex = zIndexForPassAtIndex(indexPath)
         return attributes
     }
-    override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
-        var range = rangeForVisibleCells(rect, count: (collectionView?.numberOfItemsInSection(0))! , m: metrics)
+    override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        let range = rangeForVisibleCells(rect, count: (collectionView?.numberOfItemsInSection(0))! , m: metrics)
         
         // Uncomment to see the current range
         //NSLog(@"Visible range: %@", NSStringFromRange(range));
         
-        var cells = NSMutableArray(capacity: range.length)
+        var cells = [UICollectionViewLayoutAttributes]() //NSMutableArray(capacity: range.length)
         
         for (var index=0,item=range.location; item < (range.location + range.length); item++, index++)
         {
-            cells[index] = self.layoutAttributesForItemAtIndexPath(NSIndexPath(forItem: item, inSection: 0))
+            cells.append(self.layoutAttributesForItemAtIndexPath(NSIndexPath(forItem: item, inSection: 0))!)
         }
         
-        return cells as [AnyObject];
+        return cells as [UICollectionViewLayoutAttributes];
     }
 
     override func collectionViewContentSize() -> CGSize {
@@ -96,7 +96,7 @@ class PassbookLayout: UICollectionViewLayout {
         min = (min < 0)     ? 0   : min;
         min = (min < max)   ? min : max;
 
-        var r = NSMakeRange(min, max-min);
+        let r = NSMakeRange(min, max-min);
         
         return r;
 

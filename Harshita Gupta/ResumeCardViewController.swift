@@ -13,13 +13,13 @@ class ResumeCardViewController : UICollectionViewController {
     var resumeCards: NSArray = Singleton.HG_ResumeItems.allSectionItems
     
     override func viewDidLoad() {
-        println("view loaded")
+        print("view loaded")
 
         super.viewDidLoad()
     
         self.collectionView?.registerNib(UINib(nibName: "ResumeCardCell", bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: "resumeCard")
         
-        println("registered cell")
+        print("registered cell")
         // Do any additional setup after loading the view, typically from a nib.
         
       //  self.stackedLayout.fillHeight = false
@@ -55,10 +55,10 @@ class ResumeCardViewController : UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
         var shouldSelect = true;
-        var indexPath:NSIndexPath
-        for indexPath in collectionView.indexPathsForSelectedItems(){
-            collectionView.deselectItemAtIndexPath(indexPath as? NSIndexPath, animated: true)
-            self.collectionView(collectionView, didDeselectItemAtIndexPath: indexPath as! NSIndexPath)
+        var _:NSIndexPath
+        for indexPath in collectionView.indexPathsForSelectedItems()!{
+            collectionView.deselectItemAtIndexPath((indexPath as NSIndexPath), animated: true)
+            self.collectionView(collectionView, didDeselectItemAtIndexPath: indexPath )
             shouldSelect = false
         }
         return shouldSelect

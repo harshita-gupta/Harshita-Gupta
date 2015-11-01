@@ -18,7 +18,7 @@ class ResumeItemDetailViewController : UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        print("awoke from nib")
+        print("awoke from nib", terminator: "")
         //self.backgroundColor
     }
     
@@ -30,7 +30,7 @@ class ResumeItemDetailViewController : UIView {
     
     func createOrDeleteImageView() {
         if detail?.visualsPresent! == true {
-            var animImageView : FLAnimatedImageView = FLAnimatedImageView()
+            let animImageView : FLAnimatedImageView = FLAnimatedImageView()
             animImageParentView.addSubview(animImageView)
             var imView = animImageView.frame
             imView.origin.x = 0
